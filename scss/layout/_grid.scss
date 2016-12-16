@@ -1,0 +1,15 @@
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.panel{
+  //flex grow 1 flex basis 1
+  flex: 1 1;
+  flex-basis: 200px;
+}
+.rafting, .custom{
+  flex-basis: 500px;
+}
+.base-camp, .hiking, .canoeing{
+  flex-basis: 200px;
+}

@@ -1,0 +1,22 @@
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  &:hover{
+    background-color: $dark-gray;
+  }
+}
+.no-hover  a:hover{
+  background-color: transparent;
+}
+.title{
+  .play-button{
+    height: 7vw;
+    width: 7vw;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: $dark-gray;
+    opacity: .9;
+    border-radius: 50%;
+  }
+}

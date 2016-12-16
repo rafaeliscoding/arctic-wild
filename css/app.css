@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+div {
+  border: 1px dashed black; }
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white; }
+  a:hover {
+    background-color: #404040; }
+
+.no-hover a:hover {
+  background-color: transparent; }
+
+.title .play-button {
+  height: 7vw;
+  width: 7vw;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: #404040;
+  opacity: .9;
+  border-radius: 50%; }
+
+.navigation {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .navigation .links {
+    display: flex;
+    justify-content: center; }
+  .navigation .logo {
+    min-width: 200px; }
+
+.middle-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  align-items: center;
+  background-image: url(../img/bg-footercopyright.jpg); }
+  .middle-menu .search {
+    display: flex;
+    align-items: center; }
+    .middle-menu .search img {
+      width: 30px; }
+
+/* Style The Dropdown Button */
+.drop-button {
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #404040;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+/* Change color of dropdown links on hover */
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41; }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; }
+
+.panel {
+  flex: 1 1;
+  flex-basis: 200px; }
+
+.rafting, .custom {
+  flex-basis: 500px; }
+
+.base-camp, .hiking, .canoeing {
+  flex-basis: 200px; }
+
+.header {
+  background-image: url(../img/moose.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px; }
+  .header .title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; }
+    .header .title h2 {
+      margin-bottom: -40px;
+      color: white; }
+    .header .title svg {
+      min-width: 400px;
+      max-width: 600px; }
+
+/*# sourceMappingURL=app.css.map */

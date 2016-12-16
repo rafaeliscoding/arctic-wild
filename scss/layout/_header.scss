@@ -1,0 +1,22 @@
+.header{
+  background-image: url(../img/moose.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  .title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    h2{
+      margin-bottom: -40px;
+      color: white;
+    }
+
+    // justify-content: center;
+    svg{
+      min-width: 400px;
+      max-width: 600px;
+    }
+  }
+}
