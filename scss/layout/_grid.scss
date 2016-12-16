@@ -15,29 +15,73 @@
 }
 .flexy-1{
   @extend %flexy;
-
+  //change height and % for queries
+  flex-wrap: wrap;
+  height: 400px;
   .rafting{
-    @include flexBasis-grow1-posRel(400px);
+    @include flexBasis-grow1-posRel(60%);
     @include backgroundCover("../img/home-raft.jpg");
+    flex-basis: 1;
   }
   .hiking{
-    @include flexBasis-grow1-posRel(200px);
+    @include flexBasis-grow1-posRel(20%);
     @include backgroundCover("../img/home-backpacking.jpg");
   }
   .base-camp{
-    @include flexBasis-grow1-posRel(200px);
+    @include flexBasis-grow1-posRel(20%);
     @include backgroundCover("../img/home-basecamp.jpg");
+  }
+  @media(max-width: $mobile){
+    flex-wrap: wrap;
+    height: 800px;
+    .rafting{
+      @include flexBasis-grow1-posRel(100%);
+      // @include backgroundCover("../img/home-raft.jpg");
+      // flex-basis: 1;
+    }
+    .hiking{
+      @include flexBasis-grow1-posRel(50%);
+      // @include backgroundCover("../img/home-backpacking.jpg");
+    }
+    .base-camp{
+      @include flexBasis-grow1-posRel(50%);
+      // @include backgroundCover("../img/home-basecamp.jpg");
+    }
   }
 }
 .flexy-2{
+  // flex-wrap: wrap;
   @extend %flexy;
-  .custom, .photography{
-    @include flexBasis-grow1-posRel(200px);
-    @include backgroundCover("../img/home-basecamp.jpg");
+  .custom{
+    @include flexBasis-grow1-posRel(100%);
+
+    @include backgroundCover("../img/home-custom.jpg");
+  }
+  .photography{
+    @include flexBasis-grow1-posRel(50%);
+    @include backgroundCover("../img/home-photo.jpg");
   }
   .canoeing{
-    @include flexBasis-grow1-posRel(400px);
-    @include backgroundCover("../img/home-basecamp.jpg");
+    @include flexBasis-grow1-posRel(50%);
+    @include backgroundCover("../img/home-canoe.jpg");
+  }
+  @media(max-width: $mobile){
+    flex-wrap: wrap;
+    height: 800px;
+    .custom{
+      @include flexBasis-grow1-posRel(100%);
+
+      @include backgroundCover("../img/home-custom.jpg");
+    }
+    .photography{
+      @include flexBasis-grow1-posRel(50%);
+      @include backgroundCover("../img/home-photo.jpg");
+    }
+    .canoeing{
+      @include flexBasis-grow1-posRel(50%);
+      @include backgroundCover("../img/home-canoe.jpg");
+    }
+
   }
 }
 // .rafting, .custom{

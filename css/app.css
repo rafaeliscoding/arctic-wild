@@ -20,9 +20,7 @@ html {
 
 .flexy-1, .flexy-2 {
   display: flex;
-  flex-wrap: nowrap;
-  flex: 1 1;
-  height: 400px; }
+  flex: 1 1; }
 
 html, body {
   margin: 0;
@@ -42,6 +40,9 @@ div {
 
 .title {
   border-color: #DC7725; }
+
+.flexy-1 {
+  border: 5px dashed red; }
 
 body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
@@ -232,55 +233,122 @@ a {
   bottom: 5%;
   left: 5%; }
 
-.flexy-1 .rafting {
-  flex-basis: 400px;
-  flex-grow: 1;
-  position: relative;
-  background-image: url("../img/home-raft.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-.flexy-1 .hiking {
-  flex-basis: 200px;
-  flex-grow: 1;
-  position: relative;
-  background-image: url("../img/home-backpacking.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-.flexy-1 .base-camp {
-  flex-basis: 200px;
-  flex-grow: 1;
-  position: relative;
-  background-image: url("../img/home-basecamp.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+.flexy-1 {
+  flex-wrap: wrap;
+  height: 400px; }
+  .flexy-1 .rafting {
+    flex-basis: 60%;
+    flex-grow: 1;
+    position: relative;
+    height: 400px;
+    background-image: url("../img/home-raft.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 1; }
+  .flexy-1 .hiking {
+    flex-basis: 20%;
+    flex-grow: 1;
+    position: relative;
+    height: 400px;
+    background-image: url("../img/home-backpacking.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .flexy-1 .base-camp {
+    flex-basis: 20%;
+    flex-grow: 1;
+    position: relative;
+    height: 400px;
+    background-image: url("../img/home-basecamp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  @media (max-width: 935px) {
+    .flexy-1 {
+      flex-wrap: wrap;
+      height: 800px; }
+      .flexy-1 .rafting {
+        flex-basis: 100%;
+        flex-grow: 1;
+        position: relative;
+        height: 400px; }
+      .flexy-1 .hiking {
+        flex-basis: 50%;
+        flex-grow: 1;
+        position: relative;
+        height: 400px; }
+      .flexy-1 .base-camp {
+        flex-basis: 50%;
+        flex-grow: 1;
+        position: relative;
+        height: 400px; } }
 
-.flexy-2 .custom, .flexy-2 .photography {
-  flex-basis: 200px;
+.flexy-2 .custom {
+  flex-basis: 100%;
   flex-grow: 1;
   position: relative;
-  background-image: url("../img/home-basecamp.jpg");
+  height: 400px;
+  background-image: url("../img/home-custom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+.flexy-2 .photography {
+  flex-basis: 50%;
+  flex-grow: 1;
+  position: relative;
+  height: 400px;
+  background-image: url("../img/home-photo.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 .flexy-2 .canoeing {
-  flex-basis: 400px;
+  flex-basis: 50%;
   flex-grow: 1;
   position: relative;
-  background-image: url("../img/home-basecamp.jpg");
+  height: 400px;
+  background-image: url("../img/home-canoe.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+@media (max-width: 935px) {
+  .flexy-2 {
+    flex-wrap: wrap;
+    height: 800px; }
+    .flexy-2 .custom {
+      flex-basis: 100%;
+      flex-grow: 1;
+      position: relative;
+      height: 400px;
+      background-image: url("../img/home-custom.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .flexy-2 .photography {
+      flex-basis: 50%;
+      flex-grow: 1;
+      position: relative;
+      height: 400px;
+      background-image: url("../img/home-photo.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .flexy-2 .canoeing {
+      flex-basis: 50%;
+      flex-grow: 1;
+      position: relative;
+      height: 400px;
+      background-image: url("../img/home-canoe.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; } }
 
 .header {
   background-image: url(../img/moose.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  min-height: 560px;
-  overflow: hidden; }
+  min-height: 560px; }
   .header .title {
     display: flex;
     flex-direction: column;

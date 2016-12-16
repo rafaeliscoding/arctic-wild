@@ -4,6 +4,8 @@ $dark-gray: #404040;
 $orange: #DC7725;
 $white: #fff;
 
+$mobile: 935px;
+
 %gallery-button{
   width: 100px;
   height: 100px;
@@ -21,7 +23,6 @@ $white: #fff;
 }
 %flexy{
   display: flex;
-  flex-wrap: nowrap;
+  // flex-wrap: wrap;
   flex: 1 1;
-  height: 400px;
 }
