@@ -190,6 +190,8 @@ a.orange {
   justify-content: space-around;
   align-items: center;
   width: 90%; }
+  .navigation .secret-nav {
+    display: none; }
   .navigation .links {
     display: flex;
     justify-content: center; }
@@ -205,7 +207,11 @@ a.orange {
     .navigation {
       justify-content: flex-start; }
       .navigation .links {
-        display: none; } }
+        display: none; }
+      .navigation .secret-nav {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end; } }
 
 .middle-menu {
   display: flex;
@@ -214,6 +220,10 @@ a.orange {
   height: 85px;
   align-items: center;
   background-image: url(../img/bg-footercopyright.jpg); }
+  .middle-menu .modal-trigger {
+    color: #999999; }
+    .middle-menu .modal-trigger:hover {
+      color: #fff; }
   .middle-menu .search {
     display: flex;
     justify-content: flex-end;

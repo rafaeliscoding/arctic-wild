@@ -4,6 +4,10 @@
   justify-content: space-around;
   align-items: center;
   width: 90%;
+  .secret-nav{
+    display: none;
+
+  }
   .links{
     display: flex;
     justify-content: center;
@@ -23,6 +27,11 @@
     .links{
       display:none;
   }
+  .secret-nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
 }
 }
 .middle-menu{
@@ -32,6 +41,12 @@
   height: 85px;
   align-items: center;
   background-image: url(../img/bg-footercopyright.jpg);
+  .modal-trigger{
+    color:lighten($dark-gray, 35%);
+    &:hover{
+      color: $white;
+    }
+  }
   .search{
     display: flex;
     justify-content: flex-end;
