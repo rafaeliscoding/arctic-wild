@@ -2,9 +2,11 @@ a{
   text-decoration: none;
   color: white;
 }
+
 .grow{
   &:hover{
-    @include animation(spin .9s ease-in-out, bounce .5s ease-out);
+    // @include animation(spin .9s ease-in-out, bounce .5s ease-out);
+    @include animation(bounce .6s ease-in-out, spin .5s ease-out);
   }
 }
 .gallery-button{
@@ -37,13 +39,18 @@ a.orange{
   color: white;
   padding: 15px;
   background-color:  $orange;
+  transition: all .3s ease-in-out;
+  &:hover{
+    @include transform(scale(1.3));
+    border-radius: 13px;
+  }
   a:hover{
     background: transparent;
-    // animation: spin .5s ease-in;
-
   }
 }
-
+.panel:hover  .gallery-button{
+  @include animation(bounce .4s ease-in-out, spin .3s ease-out);
+}
 .arrow-down {
   width: 0;
   height: 0;
