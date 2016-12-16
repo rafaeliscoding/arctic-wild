@@ -2,17 +2,19 @@
   background-image: url(../img/moose.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 100vh;
+  min-height: 560px;
+  overflow: hidden;
   .title{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    height: 90%;
     h2{
-      margin-bottom: -40px;
+      // margin-bottom: -40px;
       color: white;
     }
-
     // justify-content: center;
     svg{
       min-width: 400px;

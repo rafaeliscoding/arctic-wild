@@ -1,0 +1,11 @@
+@mixin backgroundCover($url){
+  background-image:url($url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin flexBasis-grow1-posRel($n){
+  flex-basis: $n;
+  flex-grow: 1;
+  position: relative;
+}

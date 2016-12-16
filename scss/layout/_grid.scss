@@ -1,15 +1,48 @@
 .gallery{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 .panel{
   //flex grow 1 flex basis 1
   flex: 1 1;
-  flex-basis: 200px;
+  // flex-basis: 200px;
 }
-.rafting, .custom{
-  flex-basis: 500px;
+.gallery-text{
+  position: absolute;
+  bottom: 5%;
+  left:5%;
 }
-.base-camp, .hiking, .canoeing{
-  flex-basis: 200px;
+.flexy-1{
+  @extend %flexy;
+
+  .rafting{
+    @include flexBasis-grow1-posRel(400px);
+    @include backgroundCover("../img/home-raft.jpg");
+  }
+  .hiking{
+    @include flexBasis-grow1-posRel(200px);
+    @include backgroundCover("../img/home-backpacking.jpg");
+  }
+  .base-camp{
+    @include flexBasis-grow1-posRel(200px);
+    @include backgroundCover("../img/home-basecamp.jpg");
+  }
 }
+.flexy-2{
+  @extend %flexy;
+  .custom, .photography{
+    @include flexBasis-grow1-posRel(200px);
+    @include backgroundCover("../img/home-basecamp.jpg");
+  }
+  .canoeing{
+    @include flexBasis-grow1-posRel(400px);
+    @include backgroundCover("../img/home-basecamp.jpg");
+  }
+}
+// .rafting, .custom{
+//   flex-basis: 500px;
+// }
+// .base-camp, .hiking, .canoeing{
+//   flex-basis: 200px;
+// }
