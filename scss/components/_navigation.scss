@@ -3,10 +3,10 @@
   display:flex;
   justify-content: space-around;
   align-items: center;
+  width: 90%;
   .links{
     display: flex;
     justify-content: center;
-
   }
   .logo{
     min-width: 200px;
@@ -16,14 +16,25 @@
   display: flex;
   justify-content: space-around;
   padding: 15px;
-  align-items: center;
+  align-content: center;
   background-image: url(../img/bg-footercopyright.jpg);
   .search{
     display: flex;
     align-items: center;
+    // align-self: flex-end;
+    flex-grow: 1;
     img{
       width: 30px;
+      // align-self: flex-end;
     }
+    span{
+      // display: block;
+      margin-left: 80%;
+    }
+  }
+  .side-nav{
+    align-self: center;
+    flex-grow: 1;
   }
 }
 /* Style The Dropdown Button */

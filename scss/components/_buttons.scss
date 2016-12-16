@@ -30,7 +30,6 @@ a{
     justify-content: center;
     min-width: 100px;
     min-height: 100px;
-    // max-width:100%;
     background-color: $white;
     opacity: .8;
     border-radius: 50%;
@@ -39,6 +38,7 @@ a{
   .fa{
     color: $orange;
     align-self: center;
+    margin-left: 10px;
   }
 }
 .explore-button{
