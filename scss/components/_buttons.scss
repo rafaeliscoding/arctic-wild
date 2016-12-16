@@ -1,22 +1,10 @@
 a{
   text-decoration: none;
-  text-transform: uppercase;
   color: white;
-  &:hover{
-    background-color: $dark-gray;
-  }
-}
-.no-hover  a:hover{
-  background-color: transparent;
 }
 .grow{
-  // @include transition(all .35s ease-in-out);
-  @include transition(all .1s ease-in-out);
   &:hover{
-    // @include animation(spin .9s ease-in-out);
-    @include transform(scale(1.3));
-
-    // opacity: .9;
+    @include animation(spin .9s ease-in-out, bounce .5s ease-out);
   }
 }
 .gallery-button{

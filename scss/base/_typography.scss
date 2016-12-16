@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans+Condensed:300');
 body{
   font-family: $base-font;
+}
+.middle-menu{
+  font-family: $light-font;
+  font-size: 14pt;
+  a{
+    color: lighten($dark-gray, 35%);
+    &:hover{
+      color: white;
+    }
+  }
+}
+.navigation{
+  .nav{
+    a{
+      text-transform: uppercase;
+    }
+  }
 }
