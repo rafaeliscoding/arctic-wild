@@ -12,10 +12,25 @@ body{
     }
   }
 }
+
 .navigation{
   .nav{
     a{
       text-transform: uppercase;
     }
+  }
+}
+.gallery-text{
+  color: $white;
+  text-transform: uppercase;
+  font-size: 18pt;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 50px;
+    top: -20px;
+    background-color: $orange;
   }
 }

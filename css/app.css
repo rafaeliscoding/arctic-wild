@@ -36,7 +36,7 @@ html {
 div {
   border: 1px dashed black; }
 
-.header {
+.side-nav, .search {
   border-color: #DC7725; }
 
 .title, .navigation {
@@ -59,6 +59,19 @@ body {
 .navigation .nav a {
   text-transform: uppercase; }
 
+.gallery-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18pt;
+  position: relative; }
+  .gallery-text:before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 50px;
+    top: -20px;
+    background-color: #DC7725; }
+
 a {
   text-decoration: none;
   color: white; }
@@ -67,6 +80,9 @@ a {
   -webkit-animation: spin 0.9s ease-in-out, bounce 0.5s ease-out;
   -moz-animation: spin 0.9s ease-in-out, bounce 0.5s ease-out;
   animation: spin 0.9s ease-in-out, bounce 0.5s ease-out; }
+
+a.orange {
+  color: #DC7725; }
 
 .title .play-button {
   display: flex;
@@ -188,20 +204,20 @@ a {
 
 .middle-menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 15px;
   height: 85px;
-  align-content: center;
+  align-items: center;
   background-image: url(../img/bg-footercopyright.jpg); }
   .middle-menu .search {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     flex-grow: 1; }
     .middle-menu .search img {
       width: 30px; }
     .middle-menu .search span {
       color: #cccccc;
-      margin-left: 80%;
       padding: 15px;
       font-weight: 900; }
   .middle-menu .side-nav {

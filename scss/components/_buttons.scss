@@ -10,6 +10,9 @@ a{
 .gallery-button{
   @extend %gallery-button;
 }
+a.orange{
+  color: $orange;
+}
 
 .title{
   .play-button{
@@ -23,6 +26,7 @@ a{
     border-radius: 50%;
     margin-bottom: 15px;
   }
+
   .fa{
     color: $orange;
     align-self: center;
