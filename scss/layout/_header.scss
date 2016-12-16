@@ -9,6 +9,13 @@
   justify-content: space-around;
   min-height: 560px;
   // overflow: auto;
+  .divider{
+    height: 5px;
+    margin: auto;
+    margin-top: -20px;
+    width: 40%;
+    background-color: $white;
+  }
   .title{
     display: flex;
     flex-direction: column;
