@@ -2,17 +2,19 @@
   background-image: url(../img/moose.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  // height: 50vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 560px;
+  // flex-grow: 1;
+  // min-height: 60%;
   // overflow: auto;
   .divider{
     height: 5px;
     margin: auto;
-    margin-top: -20px;
+    // margin-top: -40px;
+    margin-bottom: 15px;
     width: 40%;
     background-color: $white;
   }
@@ -22,19 +24,37 @@
     // flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 90%;
+
+    flex-grow: 1;
+    // height: 90%;
+    width: 100%;
+    padding: 20px;
+    @media(max-width: $mobile){
+      .le-title{
+        padding: 30px;
+      }
+    }
     .le-title{
       text-align: center;
+      width: 100%;
+
     }
     h2{
-      margin-bottom: -50px;
+      margin-bottom: -30px;
       color: white;
     }
     // justify-content: center;
-    svg{
+    .svg-container{
+      // border: 2px solid ;
+    flex-grow: 1;
+    flex-shrink: 0;
+    }
+    img.svg{
       // margin-top:-40px;
-      min-width: 600px;
-      width: 50vw;
+      // min-width: 500px;
+      width: 50%;
+      min-width: 300px;
+      // border: 2px solid ;
     }
   }
 }

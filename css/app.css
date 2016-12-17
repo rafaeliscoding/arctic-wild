@@ -267,6 +267,9 @@ a.orange {
   height: 85px;
   align-items: center;
   background-image: url(../img/bg-footercopyright.jpg); }
+  @media (max-width: 935px) {
+    .middle-menu {
+      display: none; } }
   .middle-menu .modal-trigger {
     color: #999999; }
     .middle-menu .modal-trigger:hover {
@@ -583,16 +586,14 @@ a.orange {
   background-image: url(../img/moose.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: 560px; }
+  justify-content: space-around; }
   .header .divider {
     height: 5px;
     margin: auto;
-    margin-top: -20px;
+    margin-bottom: 15px;
     width: 40%;
     background-color: #fff; }
   .header .title {
@@ -600,14 +601,23 @@ a.orange {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 90%; }
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px; }
+    @media (max-width: 935px) {
+      .header .title .le-title {
+        padding: 30px; } }
     .header .title .le-title {
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
     .header .title h2 {
-      margin-bottom: -50px;
+      margin-bottom: -30px;
       color: white; }
-    .header .title svg {
-      min-width: 600px;
-      width: 50vw; }
+    .header .title .svg-container {
+      flex-grow: 1;
+      flex-shrink: 0; }
+    .header .title img.svg {
+      width: 50%;
+      min-width: 300px; }
 
 /*# sourceMappingURL=app.css.map */
